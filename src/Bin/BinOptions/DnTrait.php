@@ -9,12 +9,14 @@ trait DnTrait
      * Критерии поиска для сертификата.
      * Если более одного сертификата удовлетворяют заданным критериям,
      * пользователю будет предложено выбрать один из найденных.
-     * @param string $searchString
+     * @param string $dnKey
+     * @param string $dnValue
      * @return $this
      */
-    final public function dn(string $searchString): static
+    final public function dn(string $dnKey, string $dnValue): static
     {
-        $this->setOptions('"' . $searchString . '"', '-dn', ', ');
+        $searchString = $dnKey . '="' . $dnValue . '"';
+        $this->setOptions($searchString, '-dn', ', ');
         return $this;
     }
 }

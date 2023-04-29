@@ -14,7 +14,7 @@ final class CryptoProManager
     private CertMgr|null $certmgr = null;
     private CryptCp|null $cryptcp = null;
     private CpConfig|null $cpconfig = null;
-    private CspTest|null $csptest = null;
+    private CspTest|null $cspTest = null;
 
     private Bin|null $command = null;
 
@@ -25,7 +25,7 @@ final class CryptoProManager
         $this->certmgr = new CertMgr();
         $this->cryptcp = new CryptCp();
         $this->cpconfig = new CpConfig();
-        $this->csptest = new CspTest();
+        $this->cspTest = new CspTest();
     }
 
     /**
@@ -57,7 +57,7 @@ final class CryptoProManager
      */
     public function cspTest(): CspTest
     {
-        $this->command = $this->csptest;
+        $this->command = $this->cspTest;
         return $this->command;
     }
 

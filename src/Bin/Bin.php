@@ -5,7 +5,7 @@ namespace CloudCastle\CryptoProPhpApi\Bin;
 use CloudCastle\CryptoProPhpApi\Abstracts\Bin as AbstractBin;
 use CloudCastle\CryptoProPhpApi\Abstracts\Options;
 
-class Bin extends AbstractBin
+abstract class Bin extends AbstractBin
 {
     private string|null $command = null;
     private Options|null $options = null;
