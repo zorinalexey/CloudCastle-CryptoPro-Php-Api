@@ -9,7 +9,7 @@ trait TokenTrait
      * @param string $token
      * @return $this
      */
-    final public function token(string $token): static
+    final public function token(string $token): self
     {
         $this->setOptions('-token ' . $token);
         return $this;

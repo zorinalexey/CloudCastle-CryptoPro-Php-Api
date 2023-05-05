@@ -10,7 +10,7 @@ trait DirTrait
      * @param string $path
      * @return $this
      */
-    final public function dir(string $path): static
+    final public function dir(string $path): self
     {
         $this->setOptions('-dir "' . $path . '"');
         return $this;

@@ -12,7 +12,7 @@ trait CertTrait
      * Не добавлять сертификат в сообщения во всех остальных случаях
      * @return $this
      */
-    final public function certAdd(string|null $add = null): static
+    final public function certAdd(string|null $add = null): self
     {
         $add ??= 'cert';
         $cert = mb_strtolower($add);

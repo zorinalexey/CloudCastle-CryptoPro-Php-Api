@@ -9,7 +9,7 @@ trait AddChainTrait
      * Добавить полную цепочку сертификата в подпись
      * @return $this
      */
-    final public function addChain(): static
+    final public function addChain(): self
     {
         $this->setOptions('-addchain');
         return $this;

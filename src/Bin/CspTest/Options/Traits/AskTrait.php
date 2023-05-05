@@ -8,7 +8,7 @@ trait AskTrait
     /**
      * @return $this
      */
-    public function ask(): static
+    public function ask(): self
     {
         $this->setOptions('-ask');
         return $this;

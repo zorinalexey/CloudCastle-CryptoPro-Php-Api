@@ -12,7 +12,7 @@ trait SignTypeTrait
      * detached - создать отсоединённые подписи в отдельных файлах
      * @return $this
      */
-    final public function signType(string $type): static
+    final public function signType(string $type): self
     {
         $type = mb_strtolower($type);
         if ($type !== 'detached') {

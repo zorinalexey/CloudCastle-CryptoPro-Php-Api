@@ -13,7 +13,7 @@ trait DnTrait
      * @param string $dnValue
      * @return $this
      */
-    final public function dn(string $dnKey, string $dnValue): static
+    final public function dn(string $dnKey, string $dnValue): self
     {
         $searchString = $dnKey . '="' . $dnValue . '"';
         $this->setOptions($searchString, '-dn', ', ');

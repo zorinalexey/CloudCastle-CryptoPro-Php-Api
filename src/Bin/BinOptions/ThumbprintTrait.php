@@ -10,7 +10,7 @@ trait ThumbprintTrait
      * @param string $certSha1
      * @return $this
      */
-    final public function thumbprint(string $certSha1): static
+    final public function thumbprint(string $certSha1): self
     {
         $this->setOptions('-thumbprint ' . $certSha1);
         return $this;

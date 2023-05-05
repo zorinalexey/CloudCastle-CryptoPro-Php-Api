@@ -10,7 +10,7 @@ trait DfTrait
      * @param string $certFile
      * @return $this
      */
-    final public function df(string $certFile): static
+    final public function df(string $certFile): self
     {
         $this->setOptions('-df "' . $certFile . '"');
         return $this;

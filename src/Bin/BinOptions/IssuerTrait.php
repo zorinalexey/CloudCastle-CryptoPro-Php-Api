@@ -12,7 +12,7 @@ trait IssuerTrait
      * @param string $searchString
      * @return $this
      */
-    final public function issuer(string $searchString): static
+    final public function issuer(string $searchString): self
     {
         $this->setOptions("-issuer '" . $searchString . "'");
         return $this;

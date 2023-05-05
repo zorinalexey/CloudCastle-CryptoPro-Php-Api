@@ -3,12 +3,16 @@
 namespace CloudCastle\CryptoProPhpApi\Bin\CspTest;
 
 use CloudCastle\CryptoProPhpApi\Bin\Bin;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\AbsorbOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\CertLicOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\DefaultProviderOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\HashOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\IpSecOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowEncOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\LowSignOption;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\MiniCaOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\PropertyOptions;
+use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\RcOptions;
 use CloudCastle\CryptoProPhpApi\Bin\CspTest\Options\SfSignOptions;
 
 final class CspTest extends Bin
@@ -117,10 +121,6 @@ final class CspTest extends Bin
         return $opt;
     }
 
-
-
-
-
     /**
      *
      * @return IpSecOptions
@@ -133,14 +133,13 @@ final class CspTest extends Bin
         return $opt;
     }
 
-
     /**
      *
-     * @return IpSecOptions
+     * @return AbsorbOptions
      */
-    public function absorb(): IpSecOptions
+    public function absorb(): AbsorbOptions
     {
-        $opt = new \stdClass();
+        $opt = new AbsorbOptions();
         $this->setCommand('-absorb');
         $this->setOptions($opt);
         return $opt;
@@ -175,24 +174,23 @@ final class CspTest extends Bin
 
     /**
      *
-     * @return IpSecOptions
+     * @return CertLicOptions
      */
-    public function certLic(): IpSecOptions
+    public function certLic(): CertLicOptions
     {
-        $opt = new \stdClass();
+        $opt = new CertLicOptions();
         $this->setCommand('-certlic');
         $this->setOptions($opt);
         return $opt;
     }
 
-
     /**
      *
-     * @return IpSecOptions
+     * @return RcOptions
      */
-    public function rc(): IpSecOptions
+    public function rc(): RcOptions
     {
-        $opt = new \stdClass();
+        $opt = new RcOptions();
         $this->setCommand('-rc');
         $this->setOptions($opt);
         return $opt;
@@ -201,11 +199,11 @@ final class CspTest extends Bin
 
     /**
      *
-     * @return IpSecOptions
+     * @return MiniCaOptions
      */
-    public function miniCa(): IpSecOptions
+    public function miniCa(): MiniCaOptions
     {
-        $opt = new \stdClass();
+        $opt = new MiniCaOptions();
         $this->setCommand('-minica');
         $this->setOptions($opt);
         return $opt;

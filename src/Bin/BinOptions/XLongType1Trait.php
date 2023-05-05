@@ -8,7 +8,7 @@ trait XLongType1Trait
      * Создать подписи CAdES-X Long Type 1
      * @return $this
      */
-    public function xlongtype1(): static
+    public function xlongtype1(): self
     {
         $this->setOptions('-xlongtype1');
         return $this;

@@ -8,7 +8,7 @@ trait SignFileTrait
      * @param string $filePath
      * @return $this
      */
-    final public function sigFile(string $filePath): static
+    final public function sigFile(string $filePath): self
     {
         $this->setOptions('-fsig "' . $filePath . '"');
         return $this;

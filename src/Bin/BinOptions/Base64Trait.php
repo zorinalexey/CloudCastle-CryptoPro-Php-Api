@@ -9,7 +9,7 @@ trait Base64Trait
      * Использовать для представления сертификата или CRL кодировку base64.
      * @return $this
      */
-    final public function base64(): static
+    final public function base64(): self
     {
         $this->setOptions('-base64');
         return $this;

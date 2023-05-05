@@ -10,7 +10,7 @@ trait FiLeidTrait
      * @param string $file
      * @return $this
      */
-    final public function fiLeid(string $file): static
+    final public function fiLeid(string $file): self
     {
         $this->setOptions('-fileid "' . $file . '"');
         return $this;

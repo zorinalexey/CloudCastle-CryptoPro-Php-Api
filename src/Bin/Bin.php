@@ -24,9 +24,9 @@ abstract class Bin extends AbstractBin
     }
 
     /**
-     * @param string|null $command
+     * @param string $command
      */
-    final protected function setCommand(string|null $command): void
+    final protected function setCommand(string $command): void
     {
         $this->command .= $command . ' ';
     }

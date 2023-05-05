@@ -11,7 +11,7 @@ trait ProvnameTrait
      * @param string $name Имя провайдера.
      * @return $this
      */
-    final public function provname(string $name): static
+    final public function provname(string $name): self
     {
         $this->setOptions('-provname "' . $name . '"');
         return $this;

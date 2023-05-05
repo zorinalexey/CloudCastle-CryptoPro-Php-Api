@@ -22,7 +22,7 @@ trait KpsOptions
      *  во всех других случаях - хранилище машины
      * @return $this
      */
-    final public function store(string|null $store = null): static
+    final public function store(string|null $store = null): self
     {
         $store = mb_strtolower($store);
         if ($store === 'user') {
@@ -39,7 +39,7 @@ trait KpsOptions
      * @param string $file Файл сообщения или сертификата
      * @return $this
      */
-    final public function certOrMessage(string $file): static
+    final public function certOrMessage(string $file): self
     {
         $this->setOptions("-f '" . $file . "'");
         return $this;
@@ -50,7 +50,7 @@ trait KpsOptions
      * @param int|null $count
      * @return $this
      */
-    final public function certsCount(int|null $count = null): static
+    final public function certsCount(int|null $count = null): self
     {
         $count ??= 1;
         if ($count > 1) {

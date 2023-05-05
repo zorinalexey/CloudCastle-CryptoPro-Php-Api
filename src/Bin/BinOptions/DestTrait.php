@@ -9,7 +9,7 @@ trait DestTrait
      * @param string $path
      * @return $this
      */
-    final public function dest(string $path): static
+    final public function dest(string $path): self
     {
         $this->setOptions("-dest '" . $path . "'");
         return $this;

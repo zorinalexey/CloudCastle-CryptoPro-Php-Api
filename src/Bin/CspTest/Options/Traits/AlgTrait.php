@@ -9,7 +9,7 @@ trait AlgTrait
      * @param string $alg
      * @return $this
      */
-    final public function alg(string $alg): static
+    final public function alg(string $alg): self
     {
         $this->setOptions('-alg ' . $alg);
         return $this;

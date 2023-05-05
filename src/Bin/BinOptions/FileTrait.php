@@ -11,7 +11,7 @@ trait FileTrait
      * @param string $path
      * @return $this
      */
-    final public function file(string $path): static
+    final public function file(string $path): self
     {
         $this->setOptions('-file "' . $path . '"');
         return $this;

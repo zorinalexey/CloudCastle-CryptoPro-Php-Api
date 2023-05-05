@@ -10,7 +10,7 @@ trait CpCa20Trait
      * @param string $url Адрес веб-интерфейса КриптоПро УЦ
      * @return $this
      */
-    final public function cpCa20(string $url): static
+    final public function cpCa20(string $url): self
     {
         $this->setOptions('-cpca20 ' . $url);
         return $this;

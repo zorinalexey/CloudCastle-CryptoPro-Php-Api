@@ -11,7 +11,7 @@ trait CaTrait
      * @param string $url Адрес веб-интерфейса КриптоПро УЦ
      * @return $this
      */
-    final public function ca(string $url): static
+    final public function ca(string $url): self
     {
         $this->setOptions('-ca ' . $url);
         return $this;

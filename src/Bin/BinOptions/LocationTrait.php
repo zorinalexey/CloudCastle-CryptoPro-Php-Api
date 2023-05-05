@@ -13,7 +13,7 @@ trait LocationTrait
      * @param string $type
      * @return $this
      */
-    final public function location(string $type): static
+    final public function location(string $type): self
     {
         $types = [
             'user',

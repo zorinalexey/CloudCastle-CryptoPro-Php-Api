@@ -8,7 +8,7 @@ trait ExportTrait
      * Пометить ключи как экспортируемые
      * @return $this
      */
-    final public function export(): static
+    final public function export(): self
     {
         $this->setOptions('-exprt');
         return $this;

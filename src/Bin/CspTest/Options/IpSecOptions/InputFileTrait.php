@@ -8,7 +8,7 @@ trait InputFileTrait
      * @param string $filePath
      * @return $this
      */
-    final public function inputFile(string $filePath): static
+    final public function inputFile(string $filePath): self
     {
         $this->setOptions('-infile "' . $filePath . '"');
         return $this;

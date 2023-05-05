@@ -10,7 +10,7 @@ trait RdnTrait
      * @param string $fieldValue Значение поля
      * @return $this
      */
-    final public function rdn(string $fieldName, string $fieldValue): static
+    final public function rdn(string $fieldName, string $fieldValue): self
     {
         $option = $fieldName . '="' . $fieldValue . '"';
         $this->setOptions($option, 'rdn', ', ');

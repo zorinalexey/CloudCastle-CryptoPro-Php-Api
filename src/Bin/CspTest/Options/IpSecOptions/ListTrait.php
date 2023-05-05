@@ -8,7 +8,7 @@ trait ListTrait
      * @param string $filePath
      * @return $this
      */
-    final public function listCRL(string $filePath): static
+    final public function listCRL(string $filePath): self
     {
         $this->setOptions('-list "' . $filePath . '"');
         return $this;

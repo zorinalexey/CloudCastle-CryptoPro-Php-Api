@@ -9,7 +9,7 @@ trait TPasswordTrait
      * @param string $password Пароль к маркеру временного доступа
      * @return $this
      */
-    final public function password(string $password): static
+    final public function password(string $password): self
     {
         $this->setOptions('-tpassword ' . $password);
         return $this;

@@ -9,7 +9,7 @@ trait StoreTrait
      * @param string $type
      * @return $this
      */
-    final public function store(string $type): static
+    final public function store(string $type): self
     {
         $store = mb_strtoupper($type);
         if ($store !== 'FILE') {

@@ -13,7 +13,7 @@ trait ContainerTrait
      * @param string $container
      * @return $this
      */
-    final public function container(string $container): static
+    final public function container(string $container): self
     {
         $this->setOptions('-container "' . $container . '"');
         return $this;

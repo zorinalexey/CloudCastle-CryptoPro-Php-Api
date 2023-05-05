@@ -11,7 +11,7 @@ trait SilentTrait
      * в таком случае требуется указать более строгие критерии поиска.
      * @return $this
      */
-    final public function silent(): static
+    final public function silent(): self
     {
         $this->setOptions('-silent');
         return $this;

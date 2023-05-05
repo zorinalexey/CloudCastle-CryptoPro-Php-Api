@@ -10,7 +10,7 @@ trait TraceTrait
      * @param string $mode
      * @return $this
      */
-    final public function trace(string $mode): static
+    final public function trace(string $mode): self
     {
         $this->setOptions('-trace ' . $mode);
         return $this;

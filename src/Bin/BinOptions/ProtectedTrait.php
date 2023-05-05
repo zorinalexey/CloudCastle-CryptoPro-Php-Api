@@ -13,7 +13,7 @@ trait ProtectedTrait
      * @param string $mode
      * @return $this
      */
-    final public function protected(string $mode): static
+    final public function protected(string $mode): self
     {
         $types = [
             'none',

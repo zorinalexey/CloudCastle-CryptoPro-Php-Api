@@ -9,7 +9,7 @@ trait AddTrait
      * Просмотра списка
      * @return $this
      */
-    final public function add(): static
+    final public function add(): self
     {
         $this->setOptions('-add');
         return $this;

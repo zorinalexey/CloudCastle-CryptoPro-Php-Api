@@ -11,9 +11,10 @@ trait StoreTrait
      *  user - хранилище пользователя (по умолчанию)
      *  во всех других случаях - хранилище машины
      * @param string|null $store
+     * @param bool $mStore
      * @return $this
      */
-    final public function store(string|null $type = null, string|null $store = null): static
+    final public function store(string|null $type = null, string|null $store = null, bool $mStore = false): self
     {
         $type ??= 'u';
         $store = ucfirst($store);
@@ -24,13 +25,17 @@ trait StoreTrait
             'Cache',
             'AddressBook'
         ];
-        if ($type !== 'user') {
+        if ($type !== 'user' && $type !== 'u') {
             $type = 'm';
         }
         if (!in_array($store, $stores)) {
             $store = $type . 'My';
         }
-        $this->setOptions('-store ' . $store);
+        if (!$mStore) {
+            $this->setOptions('-store ' . $store);
+        } else {
+            $this->setOptions('-Store ' . $store);
+        }
         return $this;
     }
 

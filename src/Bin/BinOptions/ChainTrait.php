@@ -9,7 +9,7 @@ trait ChainTrait
      * Отображать цепочку сертификатов.
      * @return $this
      */
-    final public function chain(): static
+    final public function chain(): self
     {
         $this->setOptions('-chain');
         return $this;

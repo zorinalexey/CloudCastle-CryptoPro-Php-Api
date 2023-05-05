@@ -11,7 +11,7 @@ trait TftmTrait
      * @param string $flag
      * @return $this
      */
-    final public function tfmt(string $flag): static
+    final public function tfmt(string $flag): self
     {
         $this->setOptions('-tfmt ' . $flag);
         return $this;

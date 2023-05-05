@@ -9,7 +9,7 @@ trait ClientCertTrait
      * Использовать сертификат для аутентификации на КриптоПро УЦ
      * @return $this
      */
-    final public function clientCert(): static
+    final public function clientCert(): self
     {
         $this->setOptions('-clientcert');
         return $this;

@@ -9,9 +9,9 @@ trait InputFileTrait
      * @param string $filePath
      * @return $this
      */
-    final public function inputFile(string $filePath): static
+    final public function inputFile(string $filePath): self
     {
-        $this->setOptions('-in "' . $filePath.'"');
+        $this->setOptions('-in "' . $filePath . '"');
         return $this;
     }
 }

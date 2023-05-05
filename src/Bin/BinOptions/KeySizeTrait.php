@@ -9,7 +9,7 @@ trait KeySizeTrait
      * @param int $size Длинна ключа
      * @return $this
      */
-    final public function keySize(int $size): static
+    final public function keySize(int $size): self
     {
         $this->setOptions('-keysize ' . $size);
         return $this;

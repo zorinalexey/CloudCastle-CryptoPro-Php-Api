@@ -8,7 +8,7 @@ trait NoPinTrait
     /**
      * @return $this
      */
-    final public function noPin(): static
+    final public function noPin(): self
     {
         $this->setOptions('-nopin');
         return $this;

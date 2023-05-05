@@ -8,7 +8,7 @@ trait AutoContTrait
     /**
      * @return $this
      */
-    final public function autoCont(): static
+    final public function autoCont(): self
     {
         $this->setOptions('-autocont');
         return $this;

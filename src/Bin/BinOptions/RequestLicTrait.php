@@ -9,7 +9,7 @@ trait RequestLicTrait
      * УЦ должен быть настроен на выдачу таких сертификатов
      * @return $this
      */
-    final public function requestLic(): static
+    final public function requestLic(): self
     {
         $this->setOptions('-requestlic');
         return $this;

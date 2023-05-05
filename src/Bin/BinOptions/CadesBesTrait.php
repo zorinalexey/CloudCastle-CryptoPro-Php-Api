@@ -8,7 +8,7 @@ trait CadesBesTrait
      * создать подписи CAdES-BES
      * @return $this
      */
-    public function cadesbes(): static
+    public function cadesbes(): self
     {
         $this->setOptions('-cadesbes');
         return $this;

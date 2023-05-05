@@ -10,7 +10,7 @@ trait CrlTrait
      * Добавить в сообщения список отозванных сертификатов (Если используется в классе CryptCp)
      * @return $this
      */
-    final public function crl(): static
+    final public function crl(): self
     {
         $this->setOptions('-crl');
         return $this;

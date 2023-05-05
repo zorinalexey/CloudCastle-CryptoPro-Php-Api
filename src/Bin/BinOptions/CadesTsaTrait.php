@@ -9,7 +9,7 @@ trait CadesTsaTrait
      * @param string $url
      * @return $this
      */
-    final public function file(string $url): static
+    final public function file(string $url): self
     {
         $this->setOptions('-cadestsa "' . $url . '"');
         return $this;

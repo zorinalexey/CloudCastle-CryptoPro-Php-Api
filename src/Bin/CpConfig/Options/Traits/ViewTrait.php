@@ -9,7 +9,7 @@ trait ViewTrait
      * Просмотра списка
      * @return $this
      */
-    final public function view(): static
+    final public function view(): self
     {
         $this->setOptions('-view');
         return $this;

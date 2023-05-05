@@ -10,7 +10,7 @@ trait FextTrait
      * @param string $ext
      * @return $this
      */
-    final public function fext(string $ext): static
+    final public function fext(string $ext): self
     {
         $this->setOptions("-fext ." . trim($ext, '.'));
         return $this;

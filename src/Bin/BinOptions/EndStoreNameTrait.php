@@ -9,7 +9,7 @@ trait EndStoreNameTrait
      * @param string $store
      * @return $this
      */
-    final public function storeName(string $store): static
+    final public function storeName(string $store): self
     {
         $store = ucfirst($store);
         $stores = [

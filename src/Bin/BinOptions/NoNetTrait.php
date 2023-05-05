@@ -8,7 +8,7 @@ trait NoNetTrait
      * использовать только кэшированные URL при построении цепочки
      * @return $this
      */
-    final public function nonet(): static
+    final public function nonet(): self
     {
         $this->setOptions('-nonet');
         return $this;

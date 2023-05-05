@@ -9,7 +9,7 @@ trait EnableInstallRootTrait
      * только на UNIX с -dm
      * @return $this
      */
-    final public function enableInstallRoot(): static
+    final public function enableInstallRoot(): self
     {
         $this->setOptions('-enable-install-root');
         return $this;

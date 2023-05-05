@@ -8,7 +8,7 @@ trait StampChainCheckTrait
      * Проверить цепочку сертификата в штампе времени
      * @return $this
      */
-    final public function stampchaincheck(): static
+    final public function stampchaincheck(): self
     {
         $this->setOptions('-stampchaincheck');
         return $this;

@@ -9,7 +9,7 @@ trait KeyIdTrait
      * @param string $keyid
      * @return $this
      */
-    final public function keyid(string $keyid): static
+    final public function keyid(string $keyid): self
     {
         $this->setOptions('-keyid ' . $keyid);
         return $this;

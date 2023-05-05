@@ -8,7 +8,7 @@ trait NoStampCertTrait
      * Не требовать включения в штамп сертификата службы штампов времени
      * @return $this
      */
-    final public function nostampcert(): static
+    final public function nostampcert(): self
     {
         $this->setOptions('-nostampcert');
         return $this;

@@ -11,7 +11,7 @@ trait AddFieldDnTrait
      * @param string $fieldValue Значение поля
      * @return $this
      */
-    final public function addField(string $fieldName, string $fieldValue): static
+    final public function addField(string $fieldName, string $fieldValue): self
     {
         $this->setOptions('-field "' . $fieldName . '=' . $fieldValue . '"');
         return $this;

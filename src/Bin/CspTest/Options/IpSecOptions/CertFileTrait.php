@@ -8,7 +8,7 @@ trait CertFileTrait
      * @param string $filePath
      * @return $this
      */
-    final public function certificate(string $filePath): static
+    final public function certificate(string $filePath): self
     {
         $this->setOptions('-certf "' . $filePath . '"');
         return $this;

@@ -9,7 +9,7 @@ trait PasswordTrait
      * @param string $pin
      * @return $this
      */
-    final public function password(string $pin): static
+    final public function password(string $pin): self
     {
         $this->setOptions('-password ' . $pin);
         return $this;

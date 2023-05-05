@@ -9,7 +9,7 @@ trait StoreNameTrait
      * @param string $fileName
      * @return $this
      */
-    final public function storeName(string $fileName): static
+    final public function storeName(string $fileName): self
     {
         $this->setOptions('-storename "' . $fileName . '"');
         return $this;

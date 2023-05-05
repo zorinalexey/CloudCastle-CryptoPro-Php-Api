@@ -8,7 +8,7 @@ trait AuthAttrTrait
      * Добавить подписанный атрибут в подпись
      * @return $this
      */
-    final public function authattr(): static
+    final public function authattr(): self
     {
         $this->setOptions('-authattr');
         return $this;

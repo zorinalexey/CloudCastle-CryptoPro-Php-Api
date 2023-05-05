@@ -9,7 +9,7 @@ trait StrictTrait
      * Использовать однозначное кодирование DER вместо BER
      * @return $this
      */
-    final public function strict(): static
+    final public function strict(): self
     {
         $this->setOptions('-strict ');
         return $this;

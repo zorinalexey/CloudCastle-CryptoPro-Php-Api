@@ -8,7 +8,7 @@ trait CadestTrait
      * Создать подписи CAdES-T
      * @return $this
      */
-    public function cadest(): static
+    public function cadest(): self
     {
         $this->setOptions('-cadest');
         return $this;

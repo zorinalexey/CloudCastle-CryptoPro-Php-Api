@@ -9,7 +9,7 @@ trait ThreadsTrait
      * @param int|null $threads
      * @return $this
      */
-    final public function threads(int|null $threads = null): static
+    final public function threads(int|null $threads = null): self
     {
         $threads ??= 1;
         $this->setOptions('-threads ' . $type);

@@ -9,7 +9,7 @@ trait ExTrait
      * Использовать ключ для обмена зашифрованными данными
      * @return $this
      */
-    final public function ex(): static
+    final public function ex(): self
     {
         $this->setOptions('-ex');
         return $this;
